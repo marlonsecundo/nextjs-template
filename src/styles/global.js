@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 * {
@@ -8,9 +8,27 @@ const GlobalStyles = createGlobalStyle`
   outline: 0;
 }
 
-html, body, #root {
+html, body {
   height: 100%;
-} 
+}
+
+#__next {
+  display: flex;
+  height: 100%;
+}
+
+div, section {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  ::visited {
+    color: black;
+  }
+}
 
 body {
   text-rendering: optimizeLegibility !important;
